@@ -185,3 +185,71 @@ Emmanuelachi007
 
 Date:
 July 2026
+
+Windows Event Logs
+
+## Homework Summary
+
+### What are Windows Event Logs?
+
+Windows Event Logs record activities that occur on a Windows operating system. They help administrators and SOC Analysts monitor system events, troubleshoot issues, and investigate security incidents.
+
+---
+
+## Important Windows Logs
+
+- Application Log
+- Security Log
+- System Log
+- Setup Log
+- Forwarded Events
+
+---
+
+## Important Event IDs
+
+| Event ID | Meaning |
+|----------|---------|
+| 4624 | Successful Login |
+| 4625 | Failed Login |
+| 4634 | User Logged Off |
+| 4720 | User Account Created |
+| 4726 | User Account Deleted |
+
+---
+
+## Example Investigation
+
+Scenario:
+
+A user account generated multiple Event ID **4625** entries within a few minutes.
+
+Possible Cause:
+
+Brute-force attack.
+
+Investigation Steps:
+
+1. Review the login logs.
+2. Identify the source IP address.
+3. Identify the targeted username.
+4. Review the timestamps.
+5. Determine whether the activity is malicious.
+6. Escalate the incident if necessary.
+
+---
+
+## Key Takeaways
+
+- Windows Event Logs record system activities.
+- Security Logs are the most important logs for SOC Analysts.
+- Event IDs help identify different security events.
+- Multiple failed logins may indicate a brute-force attack.
+
+---
+
+Author:
+Achi Chinonso Emmanuel
+
+GitHub:
+Emmanuelachi007
