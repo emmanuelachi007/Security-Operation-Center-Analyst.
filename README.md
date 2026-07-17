@@ -359,3 +359,76 @@ Achi Chinonso Emmanuel
 
 GitHub:
 Emmanuelachi007
+
+
+##Splunk Searching and Filtering
+
+## Objective
+
+Learn how to search and filter logs using Splunk Search Processing Language (SPL).
+
+---
+
+## Basic Searches
+
+### Search Windows Logs
+
+index=windows
+
+---
+
+### Search Failed Logins
+
+index=windows EventCode=4625
+
+---
+
+### Search Successful Logins
+
+index=windows EventCode=4624
+
+---
+
+### Search by Username
+
+index=windows User=john
+
+---
+
+### Search by IP Address
+
+index=windows src_ip=192.168.1.20
+
+---
+
+### Combine Filters
+
+index=windows EventCode=4625 User=john
+
+---
+
+## Why Filtering is Important
+
+Filtering allows SOC Analysts to:
+
+- Reduce unnecessary data
+- Investigate incidents faster
+- Find suspicious activities quickly
+- Improve incident response
+
+---
+
+## Key Takeaways
+
+- SPL is used to search logs.
+- Filters narrow search results.
+- Usernames, IP addresses, and Event IDs are common filters.
+- Combining filters makes investigations more efficient.
+
+---
+
+Author:
+Achi Chinonso Emmanuel
+
+GitHub:
+Emmanuelachi007
