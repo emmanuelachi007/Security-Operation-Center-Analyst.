@@ -253,3 +253,109 @@ Achi Chinonso Emmanuel
 
 GitHub:
 Emmanuelachi007
+
+
+#Splunk Fundamentals
+
+## Objective
+
+Understand the basics of Splunk and its role in a Security Operations Center (SOC).
+
+---
+
+## What is Splunk?
+
+Splunk is a Security Information and Event Management (SIEM) platform that collects, stores, searches, and analyzes logs from computers, servers, firewalls, and applications.
+
+---
+
+## Why Organizations Use Splunk
+
+- Collect logs from multiple systems.
+- Detect suspicious activities.
+- Investigate security incidents.
+- Monitor system health.
+- Generate alerts.
+
+---
+
+## Important Terms
+
+### Data
+
+Information collected from devices.
+
+Examples:
+
+- Windows Logs
+- Linux Logs
+- Firewall Logs
+
+---
+
+### Index
+
+A storage location where Splunk saves logs.
+
+---
+
+### Event
+
+A single log record.
+
+Example:
+
+User: Emmanuel
+
+Action: Login
+
+Status: Success
+
+---
+
+### Search
+
+A query used to find information.
+
+Example:
+
+index=windows
+
+---
+
+## Basic SPL Searches
+
+Search Windows Logs
+
+index=windows
+
+Search Failed Logins
+
+index=windows EventCode=4625
+
+Search Successful Logins
+
+index=windows EventCode=4624
+
+---
+
+## Why Splunk is Important
+
+Splunk helps SOC Analysts investigate incidents quickly by searching millions of log events in seconds.
+
+---
+
+## Key Takeaways
+
+- Splunk is a SIEM tool.
+- Splunk collects and searches logs.
+- SPL is Splunk's search language.
+- SOC Analysts use Splunk every day.
+
+---
+
+Author:
+Achi Chinonso Emmanuel
+
+GitHub:
+Emmanuelachi007
