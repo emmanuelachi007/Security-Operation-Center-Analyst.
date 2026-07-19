@@ -432,3 +432,139 @@ Achi Chinonso Emmanuel
 
 GitHub:
 Emmanuelachi007
+
+
+
+# Mission 19 - Splunk Stats Command
+
+## Objective
+
+Learn how to summarize and analyze log data using the Splunk `stats` command.
+
+---
+
+## What is the `stats` Command?
+
+The `stats` command summarizes search results and helps SOC Analysts identify patterns quickly.
+
+---
+
+## Common Examples
+
+### Count All Events
+
+```spl
+index=windows | stats count
+```
+
+### Count Failed Login Events
+
+```spl
+index=windows EventCode=4625 | stats count
+```
+
+### Count Events by User
+
+```spl
+index=windows | stats count by User
+```
+
+### Count Events by Source IP
+
+```spl
+index=windows | stats count by src_ip
+```
+
+---
+
+## Why SOC Analysts Use `stats`
+
+- Count security events.
+- Identify the most active users.
+- Detect suspicious IP addresses.
+- Find unusual activity quickly.
+
+---
+
+## Key Takeaways
+
+- `stats` summarizes data.
+- `count` counts matching events.
+- `by` groups results by a field.
+- `stats` helps analysts investigate incidents efficiently.
+
+---
+
+Author:
+Achi Chinonso Emmanuel
+
+GitHub:
+Emmanuelachi007
+
+
+
+# Mission 19 - Splunk Stats Command
+
+## Homework Summary
+
+### Purpose of the `stats` Command
+
+The `stats` command is used to summarize and analyze search results. It helps SOC Analysts identify patterns and trends in log data.
+
+---
+
+## Common Commands
+
+### Count Total Events
+
+```spl
+index=windows | stats count
+```
+
+### Count Failed Login Events
+
+```spl
+index=windows EventCode=4625 | stats count
+```
+
+### Count Events by User
+
+```spl
+index=windows | stats count by User
+```
+
+### Count Failed Login Events by Source IP
+
+```spl
+index=windows EventCode=4625 | stats count by src_ip
+```
+
+---
+
+## SOC Investigation Workflow
+
+1. Receive a security alert.
+2. Search relevant logs in Splunk.
+3. Count failed login events.
+4. Group results by source IP.
+5. Identify suspicious IP addresses.
+6. Review timestamps and usernames.
+7. Determine whether the activity is malicious.
+8. Escalate the incident if required.
+
+---
+
+## Key Takeaways
+
+- `stats` summarizes search results.
+- `count` counts matching events.
+- `by` groups results by a field such as User or src_ip.
+- Grouping data helps analysts quickly identify suspicious activity.
+
+---
+
+Author:
+Achi Chinonso Emmanuel
+
+GitHub:
+Emmanuel007
